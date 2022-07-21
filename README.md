@@ -4,7 +4,7 @@ This sample includes steps to follow in order to setup PGP Encryption and Decryp
 
 ## Quick start
 
-Clone this repo for easy start. Make sure you have permissions to configure SFTP routes (you able to see SFTP tab on Dashboard in Routes section). If not, contact support@verygoodsecurity.com.
+Clone this repo for easy start. Make sure you have permissions to configure SFTP routes (i.e. you're able to see SFTP tab on Dashboard in Routes section). If not, contact support@verygoodsecurity.com.
 
 #### 1. Fill in the .env file:
 
@@ -42,7 +42,7 @@ It will again ask for the passphrase since the script needs to get the private k
 ```
 python quick_start.py create_aliases
 ```
-On the output you'll get three aliases:
+Output sample:
 ```
 >>> private_key alias:  tok_sandbox_kjTBbQtYadkgjeDBQ9YDpD
 >>> public_key alias:   tok_sandbox_iGmX6JWUb9NzNrDA8vEQRa
@@ -84,26 +84,28 @@ Get the file back and check the content:
 
 #### 2. Encrypt using script and Decrypt using route:
 
+Encrypt the `file.txt`:
+```
+python quick_start.py encrypt_file
+```
+PUT and GET file file to decrypt it:
+
+`<image here>`
 
 #### 3. Encrypt using route and Decrypt using script:
 
+PUT and GET file file to encrypt it:
 
+`<image here>`
 
+Decrypt the file using script:
+```
+python quick_start.py decrypt_file
+```
 
-
-## Troubleshooting
+### Troubleshooting:
 
 - If you change smth in the SFTP route (or in YAML and re-import it), you always have to re-login to SFTP. Otherwise the changes won't come into effect.
-- 
-
-
-
-
-
-
-
-
-
-
-
-
+- To install GPG Keychain use `brew install gpg-suite`
+- Python 3.9.13
+- gpg (GnuPG/MacGPG2) 2.2.34 and libgcrypt 1.8.9
