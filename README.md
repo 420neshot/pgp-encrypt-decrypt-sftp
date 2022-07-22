@@ -76,11 +76,13 @@ SFTP route settings:
 
 #### 1. Encrypt and Decrypt the file with route:
 
-Put the file on SFTP. The file size should not change:
+a) PUT and GET the file from SFTP for encryption:
 
-<img width="685" alt="image" src="https://user-images.githubusercontent.com/78090218/180276241-a61dee6d-55c6-4fa9-8bb6-e7293b7737a1.png">
+<img width="697" alt="image" src="https://user-images.githubusercontent.com/78090218/180479105-86645bf1-8df5-4830-b13a-8d7957a8d9a6.png">
 
-Get the file back and check the content:
+b) PUT and GET the file again for decryption:
+
+<img width="863" alt="image" src="https://user-images.githubusercontent.com/78090218/180479635-3b25de51-283d-4760-b484-20c34e7c8199.png">
 
 #### 2. Encrypt using script and Decrypt using route:
 
@@ -88,15 +90,11 @@ Encrypt the `file.txt`:
 ```
 python quick_start.py encrypt_file
 ```
-PUT and GET file file to decrypt it:
-
-`<image here>`
+Repeat step b) from scenario #1.
 
 #### 3. Encrypt using route and Decrypt using script:
 
-PUT and GET file file to encrypt it:
-
-`<image here>`
+Repeat step a) from scenario #1.
 
 Decrypt the file using script:
 ```
